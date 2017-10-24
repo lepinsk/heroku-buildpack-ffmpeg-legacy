@@ -1,7 +1,7 @@
-Heroku buildpack: FFMpeg
+Heroku buildpack: FFMpeg-legacy
 =======================
 
-This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) for using [ffmpeg](http://www.ffmpeg.org/) in your project.  
+This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) for using a legacy version of [ffmpeg](http://www.ffmpeg.org/) in your project.  
 It doesn't do anything else, so to actually compile your app you should use [heroku-buildpack-multi](https://github.com/ddollar/heroku-buildpack-multi) to combine it with a real buildpack.
 
 Usage
@@ -23,7 +23,7 @@ To use this buildpack, you should prepare .buildpacks file that contains this bu
 
 You can verify installing ffmpeg by following command.
 
-    $ heroku run "ffmpeg -version"
+    $ heroku run "ffmpeg-legacy -version"
 
 Hacking
 -------
